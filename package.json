@@ -1,0 +1,13 @@
+{
+  "name": "proofly-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@supabase/supabase-js": "^2.39.0",
+    "openai": "^4.28.0"
+  }
+}
