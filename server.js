@@ -1,5 +1,4 @@
 import express from 'express';
-import { createClient } from '@supabase/supabase-js';
 import { handleStartSession }                    from './startSession.js';
 import { handleSubmitProof, submitProof }        from './submitProof.js';
 import { handleVerifyProof, verifyProof }        from './verifyProof.js';
