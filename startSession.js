@@ -58,6 +58,7 @@ export async function startSession({ userId, task }) {
     })
     .select()
     .single();
+console.log('Insert result:', JSON.stringify({ session, error }));
 
   if (error) {
     throw new DatabaseError('Failed to create session.', error);
