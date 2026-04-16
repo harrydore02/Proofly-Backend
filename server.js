@@ -9,7 +9,7 @@ import { handleGetUserStats }    from './getUserStats.js';
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
 import cors from 'cors';
 
 app.use(cors({
