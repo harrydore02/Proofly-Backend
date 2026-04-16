@@ -10,7 +10,13 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+import cors from 'cors';
 
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 // ─── Auth middleware ───────────────────────────────────────────────────────────
 import { createClient } from '@supabase/supabase-js';
 
